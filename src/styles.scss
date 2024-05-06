@@ -1,0 +1,37 @@
+@use "@angular/material" as mat;
+
+@include mat.core();
+
+@import "@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import '@angular/material/theming';
+
+body {
+    margin: 0;
+}
+.mat-card {
+    max-width: 640px;
+    margin: 5px;
+    @include mat-elevation(8);
+    @include mat-elevation-transition;
+}
+.mat-card-header .mat-card-title {
+    height: 40px;
+    padding-top: 8px;
+    font-size: 20px;
+  }
+
+.mat-card dl dt {
+    font-style: italic;
+    font-size: 110%;
+    padding-top: 1em;
+}
+
+.mat-card dl dt:first {
+    padding-top: 0px;
+}
+
+pre.json-display {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: pre-wrap;
+}
